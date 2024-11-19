@@ -2,19 +2,19 @@
 1. Bundle app.js with browserify
     
         browserify ./src/js/app.js -o ./src/dist/app.bundle.js
-
-2. Start the node server server
-    
-        node index.js
-
-3. Navigate to `Database_API` folder in another terminal
+2. Navigate to `Database_API` folder in another terminal
     
         cd Database_API
-    then start the database server by following command
+
+3.then start the database server by following command
 
         uvicorn main:app --reload --host 127.0.0.1
 
-4. In a new terminal migrate the truffle contract to local blockchain
+4. Start the node server server
+    
+        node index.js
+
+5. In a new terminal migrate the truffle contract to local blockchain
     
         truffle migrate
 
